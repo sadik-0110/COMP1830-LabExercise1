@@ -76,5 +76,10 @@ class Blockchain:
 if __name__ == "__main__":
     blockchain = Blockchain()
 
-    # Add your code here
-    
+    blockchain.append_block("Blockchain")
+    blockchain.append_block("Is")
+    blockchain.append_block("Awesome")
+
+    print(blockchain)
+    print("\nFinal Block Hash:")
+    print(blockchain.get_last_block().header_hash())
